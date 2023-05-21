@@ -13,7 +13,7 @@ import { CardModule } from './api/card/card.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      envFilePath: ['src/common/envs/development.env'],
+      envFilePath: ['.env'],
     }),
     TypeOrmModule.forRootAsync({
       useClass: TypeOrmConfigService,
